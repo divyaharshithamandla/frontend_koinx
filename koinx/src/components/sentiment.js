@@ -12,36 +12,21 @@ const SentimentSection = () => {
   // Sample events to display when no events are available
   const sampleEvents = [
     {
-      title: 'Crypto Conference 2025',
-      description: 'An annual conference bringing together crypto enthusiasts worldwide.',
-      website: 'https://sample-event.com/crypto-conference',
-      moreInfo: 'Details about the event: This event will feature prominent speakers from the crypto industry, with discussions on the future of decentralized finance.',
+      title: 'Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim mattis enim tincidunt',
+      // description: '.',
+      description: 'Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae sit nisi viverra natoque lacinia libero enim.',
+      icon: 'news-icon', // Replace with actual icon or path
+      backgroundColor: '#E9F2FF', // Light blue background
     },
     {
-      title: 'Blockchain Hackathon',
-      description: 'A hackathon to develop innovative blockchain solutions.',
-      website: 'https://sample-event.com/blockchain-hackathon',
-      moreInfo: 'The hackathon will bring together developers and innovators to work on solving real-world blockchain challenges.',
-    },
-    {
-      title: 'Bitcoin Meetup',
-      description: 'Local meetup for Bitcoin investors and developers.',
-      website: 'https://sample-event.com/bitcoin-meetup',
-      moreInfo: 'An informal meetup for enthusiasts to discuss the latest Bitcoin trends, news, and trading strategies.',
-    },
-    {
-      title: 'DeFi Workshop',
-      description: 'Learn about decentralized finance in this workshop.',
-      website: 'https://sample-event.com/defi-workshop',
-      moreInfo: 'Hands-on sessions will guide participants through the basics of DeFi protocols and how they can participate in decentralized finance.',
-    },
-    {
-      title: 'NFT Art Exhibition',
-      description: 'Showcasing the latest trends in NFT art.',
-      website: 'https://sample-event.com/nft-art',
-      moreInfo: 'The exhibition will highlight the intersection of art and technology, showcasing the work of leading NFT artists.',
+      // title: 'Market Insights',
+      title: 'Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim mattis enim tincidunt.',
+      description: 'Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est faucibus metus quis. Amet sapien quam viverra adipiscing condimentum. Ac consectetur et pretium in a bibendum in. Sed vitae sit nisi viverra natoque lacinia libero enim.',
+      icon: 'market-icon', // Replace with actual icon or path
+      backgroundColor: '#E7F8F3', // Light green background
     },
   ];
+  
 
   // Fetch key events from CoinGecko API
   useEffect(() => {
@@ -51,7 +36,7 @@ const SentimentSection = () => {
         const data = await response.json();
 
         if (data && data.data && data.data.length > 0) {
-          setKeyEvents(data.data.slice(0, 5)); // Display up to 5 events
+          setKeyEvents(data.data.slice(0, 2)); // Display up to 5 events
         } else {
           console.log('No events available at the moment. Using sample data.');
           setKeyEvents(sampleEvents); // Use sample events when no events are available
@@ -100,9 +85,9 @@ const SentimentSection = () => {
               )} */}
 
               {/* Button to toggle more information */}
-              <button onClick={() => toggleEventDetails(index)}>
+              {/* <button onClick={() => toggleEventDetails(index)}>
                 {visibleEvents[index] ? 'Show Less' : 'Show More'}
-              </button>
+              </button> */}
 
               {/* Hidden paragraph with more information */}
               {visibleEvents[index] && <p>{event.moreInfo}</p>}
