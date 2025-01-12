@@ -43,20 +43,20 @@
 
 .trending-coins ul {
     list-style: none;
-    padding: 0;
-    width: 100%; /* Ensures it spans the width */
+    padding: 50;
+    /* width: 100%; Ensures it spans the width */
 }
 
 .trending-coins li {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .trending-coins li img {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .trending-coins li p {

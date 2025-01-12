@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./performance.css";
-import Fundamentals from "./fundamentals";
+import Fundamentals from "./fundamentals.js";
 const Performance = () => {
   const [data, setData] = useState({
     low24h: 0,
