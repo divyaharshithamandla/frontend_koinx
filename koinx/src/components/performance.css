@@ -1,0 +1,129 @@
+.performance {
+    width: 65%; /* Set width to 65% for desktop */
+    padding: 20px; /* Padding of 20px for desktop */
+    margin: 20px; /* Center the container */
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Ensures it expands if necessary */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Heading styling */
+.performance h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Graph container styling */
+.graph-container {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Graph bar styling */
+.graph {
+    position: relative;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Bar inside graph */
+.bar {
+    position: relative;
+    width: 100%; /* Adjust this dynamically if needed */
+    height: 100%;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+
+/* Current marker inside the graph */
+.current-marker {
+    position: absolute;
+    top: 50%; /* Center the marker vertically */
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    .performance {
+        width: 80%; /* Full width for mobile */
+        padding: 10px; /* Reduced padding for mobile */ /* Center with reduced margin */
+    }
+    .performance h3 {
+        font-size: 20px;
+    }
+
+    .graph-container {
+        margin-bottom: 15px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+
+    .graph {
+        height: 8px;
+    }
+
+    .bar {
+        height: 100%;
+    }
+
+    .current-marker {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance {
+        width: 85%; /* Full width for mobile */
+        /* padding: 10px; Padding remains 10px for very small screens */
+        margin: 20px;
+    }
+
+    .performance h3 {
+        font-size: 18px;
+    }
+
+    .graph-container {
+        margin-bottom: 10px;
+    }
+
+    .label {
+        font-size: 10px;
+    }
+
+    .graph {
+        height: 6px;
+    }
+
+    .bar {
+        height: 100%;
+    }
+
+    .current-marker {
+        width: 10px;
+        height: 10px;
+    }
+}

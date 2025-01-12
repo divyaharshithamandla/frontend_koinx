@@ -1,0 +1,137 @@
+.team-members {
+    max-width: 65%; /* Set exact width to 65% */
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in the width */
+    flex-grow: 0; /* Prevent the container from growing beyond 65% */
+    flex-shrink: 0; /* Prevent shrinking below 65% */
+}
+
+/* Team list container */
+.team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Member card */
+.member-card {
+    display: flex;
+    flex-direction: row; /* Aligns content horizontally */
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Left side of member card (image) */
+.left-side {
+    text-align: center;
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Image styling */
+.left-side img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Name styling */
+.left-side h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Right side of member card (details) */
+.right-side {
+    text-align: left;
+    flex: 1;
+}
+
+/* Paragraph in the right side */
+.right-side p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Strong text styling in the right side */
+.right-side p strong {
+    font-weight: bold;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .team-members {
+        max-width: 85%; /* Full width on mobile */
+        padding: 10px; /* Reduced padding for mobile */
+    }
+    .member-card {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .left-side {
+        margin-right: 0;
+        margin-bottom: 15px; /* Space between image and text on mobile */
+    }
+
+    .right-side {
+        text-align: center;
+    }
+
+    .left-side img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right-side p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px; /* Adjust header font size on mobile */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .team-members {
+        width: 85%; /* Full width on mobile */
+        padding: 10px; /* Reduced padding for mobile */
+    }
+    .member-card {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+        padding: 10px; /* Further reduced padding */
+    }
+
+    .left-side img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .right-side p {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    h3 {
+        font-size: 18px; /* Adjust header font size further on mobile */
+    }
+}

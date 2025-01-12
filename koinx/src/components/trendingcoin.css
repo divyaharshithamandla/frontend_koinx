@@ -1,0 +1,133 @@
+/* Trending Coins Section */
+.trending-coins {
+    min-width: 25%; /* Trending Coins section takes 25% width */
+    background-color: #ffffff;
+    color: #333333;
+    padding: 30px;
+    border-radius: 10px;
+    height: calc(100vh - 80px - 40px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+.trending-coins .advertisement {
+    background-color: #1e90ff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trending-coins .advertisement h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white; /* Optional: makes the header stand out */
+}
+
+.trending-coins .get-started-btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none; /* Space between button and content */
+}
+
+.trending-coins ul {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Ensures it spans the width */
+}
+
+.trending-coins li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.trending-coins li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.trending-coins li p {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .trending-coins {
+        height: auto; /* Allows height to adjust dynamically on smaller screens */
+        padding: 20px;
+        max-width: 80%; /* Slightly less padding on mobile */
+    }
+
+    .trending-coins ul {
+        padding-left: 0;
+    }
+
+    .trending-coins li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .trending-coins .advertisement {
+        padding: 30px; /* Less padding on smaller screens */
+        min-height: 180px; /* Slightly reduce min-height */
+    }
+
+    .trending-coins .advertisement h3 {
+        font-size: 18px; /* Reduce font size of the heading */
+    }
+
+    .trending-coins .get-started-btn {
+        width: 100%; /* Make button take full width on mobile */
+        padding: 15px;
+    }
+
+    .trending-coins li img {
+        width: 25px; /* Slightly smaller icons on mobile */
+        height: 25px;
+    }
+
+    .trending-coins li p {
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .trending-coins {
+        padding: 10px; /* Further reduce padding */
+        max-width: 90%;
+    }
+
+    .trending-coins .advertisement {
+        padding: 20px; /* Less padding for very small screens */
+        min-height: 150px; /* Further reduce the min-height */
+    }
+
+    .trending-coins .advertisement h3 {
+        font-size: 16px; /* Further reduce heading font size */
+    }
+
+    .trending-coins .get-started-btn {
+        padding: 12px; /* Smaller padding for very small screens */
+    }
+
+    .trending-coins li img {
+        width: 20px; /* Even smaller icons */
+        height: 20px;
+    }
+
+    .trending-coins li p {
+        font-size: 12px; /* Even smaller font size */
+    }
+}

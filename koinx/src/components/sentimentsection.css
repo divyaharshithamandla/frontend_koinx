@@ -1,0 +1,207 @@
+.sentiment-section {
+    max-width: 61%; /* Set the initial max-width */
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Ensure they don't shrink below 65% */
+}
+
+/* Key events container */
+.key-events-container {
+    margin-bottom: 20px;
+}
+
+/* Key events slider styling */
+.key-events-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Event card styling */
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Event card title */
+.event-card h4 {
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+/* Event card description */
+.event-card p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+/* Event card link styling */
+.event-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.event-card a:hover {
+    text-decoration: underline;
+}
+
+/* Sentiment section */
+.sentiment {
+    margin-top: 20px;
+}
+
+/* Sentiment content layout */
+.sentiment-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Highest percentage section */
+.highest-percentage {
+    text-align: center;
+    margin-right: 20px;
+}
+
+/* Highest percentage title */
+.highest-percentage h4 {
+    margin-bottom: 10px;
+}
+
+/* Circle with percentage visualization */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #4caf50 calc(var(--percentage) * 1%),
+      #e0e0e0 0
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sentiment bars container */
+.sentiment-bars {
+    flex: 1;
+}
+
+/* Sentiment bar */
+.bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Label for sentiment bar */
+.bar span {
+    width: 60px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+/* Horizontal bar container */
+.horizontal-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Buy sentiment bar */
+.horizontal-bar.buy {
+    background-color: #4caf50;
+}
+
+/* Hold sentiment bar */
+.horizontal-bar.hold {
+    background-color: #ffeb3b;
+}
+
+/* Sell sentiment bar */
+.horizontal-bar.sell {
+    background-color: #f44336;
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    .sentiment-section {
+        padding: 10px;
+        width: 100%;
+        /* Remove margin */
+        max-width: 80%; /* Ensure it takes full width */
+    }
+
+    .event-card h4 {
+        font-size: 14px;
+    }
+
+    .event-card p {
+        font-size: 12px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .bar span {
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .horizontal-bar {
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sentiment-section {
+        padding: 10px;
+        width: 100%;
+     /* Remove margin */
+        max-width: 80%; /* Ensure it takes full width */
+    }
+
+    .event-card {
+        min-width: 150px;
+        padding: 8px;
+    }
+
+    .event-card h4 {
+        font-size: 12px;
+    }
+
+    .event-card p {
+        font-size: 10px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+    }
+
+    .bar span {
+        font-size: 10px;
+        width: 40px;
+    }
+
+    .horizontal-bar {
+        height: 15px;
+    }
+}
