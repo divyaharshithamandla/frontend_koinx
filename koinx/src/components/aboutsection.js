@@ -29,7 +29,7 @@ const AboutSection = () => {
         {/* Template 1 */}
         <div className="template">
           <div className="template-image">
-            {/* <img src="profit-calculator.jpeg" alt="Profit Calculator" /> */}
+            <img src="image.png" alt="Profit Calculator" />
           </div>
           <div className="template-content">
             <h4>Calculate Your Profits</h4>
@@ -41,7 +41,7 @@ const AboutSection = () => {
         {/* Template 2 */}
         <div className="template">
           <div className="template-image">
-            {/* <img src="tax-liability.jpeg" alt="Tax Liability Calculator" /> */}
+            <img src="imagetax.png" alt="Tax Liability Calculator" />
           </div>
           <div className="template-content">
             <h4>Calculate Your Tax Liability</h4>
