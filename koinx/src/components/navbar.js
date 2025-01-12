@@ -30,11 +30,11 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="nav-links">
-                <button onClick={cryptotyp}>Crypto Types</button>
-                <button onClick={freetools}>Free Tools</button>
-                <button onClick={resourcecent}>Resource Center</button>
+                <button >Crypto Types</button>
+                <button >Free Tools</button>
+                <button >Resource Center</button>
             </div>
-            <button className="get-started-btn" onClick={submit}>Get Started</button>
+            <button className="get-started-btn" >Get Started</button>
 
             {/* Message Box */}
             {isVisible && (

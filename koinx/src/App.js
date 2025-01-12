@@ -20,9 +20,9 @@ const App = () => {
       <Navbar />
       <Routes>
         
-        <Route path="/crypto-type" element={<CryptoTypesPage />} />
-        <Route path="/free-tools" element={<FreeToolsPage />} />
-        <Route path="/resource-center" element={<ResourceCenterPage />} />
+        {/* <Route path="/crypto-type"  /> */}
+        <Route path="/free-tools"  />
+        <Route path="/resource-center" />
         <Route
           path="/"
           element={

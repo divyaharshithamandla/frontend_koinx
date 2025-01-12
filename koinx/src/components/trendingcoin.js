@@ -32,7 +32,7 @@ const TrendingCoins = () => {
       <div className="advertisement">
         <h3>Get Started with KoinX for FREE</h3>
         <p>Track your crypto portfolio and taxes easily.</p>
-        <a className="get-started-btn" href="https://www.koinx.com/">
+        <a className="get-started-btn" >
           Get Started
         </a>
       </div>

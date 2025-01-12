@@ -29,24 +29,24 @@ const AboutSection = () => {
         {/* Template 1 */}
         <div className="template">
           <div className="template-image">
-            <img src="profit-calculator.jpeg" alt="Profit Calculator" />
+            {/* <img src="profit-calculator.jpeg" alt="Profit Calculator" /> */}
           </div>
           <div className="template-content">
             <h4>Calculate Your Profits</h4>
             <p>Analyze your Bitcoin investments and calculate the profits you have made so far.</p>
-            <a className="template-button" href='https://coincodex.com/profit-calculator/bitcoin/'>Click Now →</a>
+            <a className="template-button" >Click Now →</a>
           </div>
         </div>
 
         {/* Template 2 */}
         <div className="template">
           <div className="template-image">
-            <img src="tax-liability.jpeg" alt="Tax Liability Calculator" />
+            {/* <img src="tax-liability.jpeg" alt="Tax Liability Calculator" /> */}
           </div>
           <div className="template-content">
             <h4>Calculate Your Tax Liability</h4>
             <p>Determine the tax you owe on your Bitcoin holdings with ease.</p>
-            <a className="template-button" href='https://www.calculator.net/tax-calculator.html'>Click Now →</a>
+            <a className="template-button" >Click Now →</a>
           </div>
         </div>
       </div>
