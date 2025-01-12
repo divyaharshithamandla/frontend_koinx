@@ -82,7 +82,7 @@ const CoinGraph = ({ coinId }) => {
         label: "Price in USD",
         data: historicalData,
         fill: false,
-        borderColor: "#36A2EB",
+        borderColor: "#5BB450",
         tension: 0.1,
       },
     ],

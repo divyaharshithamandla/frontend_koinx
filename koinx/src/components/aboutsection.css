@@ -1,7 +1,7 @@
 /* .about-section with 65% min-width */
 .about-section {
-    width: 65%; /* Ensure the width is 65% on desktop */
-    padding: 20px; /* Padding of 20px for desktop */
+    width: 64%; /* Ensure the width is 65% on desktop */
+    padding: 30px; /* Padding of 20px for desktop */
     margin: 20px; /* Center the container */
     background-color: #ffffff;
     color: #333333;

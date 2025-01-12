@@ -51,8 +51,8 @@ const Tokenomics = () => {
           tokenomicsData.investors,
           tokenomicsData.founders,
         ],
-        backgroundColor: ["#36A2EB", "#FF6384"],
-        hoverBackgroundColor: ["#36A2EB", "#FF6384"],
+        backgroundColor: ["#32CD32", "#93DC5C"],
+        hoverBackgroundColor: ["#008000", "#008000"],
       },
     ],
   };

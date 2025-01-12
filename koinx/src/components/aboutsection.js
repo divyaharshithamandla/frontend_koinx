@@ -29,7 +29,7 @@ const AboutSection = () => {
         {/* Template 1 */}
         <div className="template">
           <div className="template-image">
-            <img src="image.png" alt="Profit Calculator" />
+            <img src="imageprofit.png" alt="Profit Calculator" />
           </div>
           <div className="template-content">
             <h4>Calculate Your Profits</h4>

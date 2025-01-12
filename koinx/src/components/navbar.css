@@ -52,28 +52,7 @@
     background-color: #f1f1f1; /* Changes background when scrolling */
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: clamp(24px, 4vw, 36px); /* Scales font size based on screen width */
-    font-weight: bold;
-    color: #333;
-}
 
-.logo-text {
-    color: #1e90ff;
-    font-size: inherit;
-    text-decoration: none; /* Matches the size of the parent .logo */
-}
-
-.big-x {
-    font-size: inherit; /* Matches the size of the parent .logo */
-    font-weight: bold;
-    color: orange;
-    margin-left: 5px;
-    transform: scale(1.1); /* Slightly enlarged */
-    font-family: 'Arial', sans-serif;
-}
 
 /* Container for the nav links */
 .nav-links {
@@ -105,8 +84,8 @@
   /* Hover effect for buttons */
   .nav-links button:hover {
     color: #fff; /* Change text color on hover */
-    background-color: #007bff; /* Blue background on hover */
-    border-color: #007bff; /* Match border with background */
+    background-color: #19d80f; /* Blue background on hover */
+    border-color: #1eff00; /* Match border with background */
     transform: scale(1.05); /* Slight scaling effect on hover */
   }
   
@@ -119,7 +98,7 @@
 /* Get Started Button */
 .get-started-btn {
     padding: 0.6rem 1.6rem;
-    background-color: #1e90ff;
+    background-color: #1eff35;
     color: white;
     border: none;
     border-radius: 4px;
@@ -131,7 +110,7 @@
 }
 
 .get-started-btn:hover {
-    background-color: #0b6ab8;
+    background-color: #23a808;
 }
 
 /* Mobile and Tablet Responsiveness */
@@ -188,4 +167,8 @@
     .get-started-btn {
         padding: 0.5rem 1.2rem;
     }
+}
+.logo-image {
+    height: 40px; /* Adjust size as needed */
+    width: auto;  /* Maintains aspect ratio */
 }
